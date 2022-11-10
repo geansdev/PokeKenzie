@@ -1,0 +1,197 @@
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 0px 35px; */
+    border-bottom: 2px solid var(--squirtle);
+}
+
+header > h2{
+    font-size: large;
+    color: var(--squirtle);
+    font-weight: 600;
+    font-size: x-large;
+}
+
+header button{
+    font-family: "Oxanium", cursive;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--squirtle);
+    border-color: var(--squirtle);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.divToast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+    width: 200px;
+    padding: 30px;
+    border-radius: 8px;
+    color: var(--white);
+    position: fixed;
+    animation: toast 4s ease-in forwards;
+}
+
+.containerLogin{
+    max-width: 80%;
+    min-width: 70%;
+    /* position: relative; */
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.containerLogin > h1{
+    color: var(--squirtle);
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.containerLogin > p {
+    text-align: center;
+    color: var(--squirtle);
+    font-size: medium;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+label{
+    font-weight: 600; 
+    color: var(--squirtle);
+    font-size: medium;
+    cursor: pointer;
+}
+
+form input{
+    margin-bottom: 35px;
+    height: 2px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid var(--squirtle);
+    background-color: var(--squirtle);
+    color: var(--white);
+    padding-left: 1rem;
+}
+
+/* form input::{
+    color: var(--white);
+} */
+
+form input.growInput{
+    animation: scale-up-ver-top .6s;
+    height: 37px;
+    margin-bottom: 0px;
+}
+
+
+@keyframes scale-up-ver-top {
+    0% {
+        transform: scaleY(.4);
+        transform-origin: 100% 0
+    }
+
+    100% {
+        transform: scaleY(1);
+        transform-origin: 100% 0
+    }
+}
+
+form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background-color: var(--squirtle);
+    border: 1px solid var(--squirtle);
+    font-size: medium;
+    position: relative;
+    padding: 12px 36px;
+    border-radius: 8px;
+    height: 37px;
+}
+form button img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 1;
+    animation: animationRotate 2s linear infinite;
+}
+@keyframes animationRotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.containerLogin > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 37px;
+    color: var(--squirtle);
+    padding: 12px 36px;
+    background-color: transparent;
+    border: 2px solid var(--squirtle);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+@keyframes toast {
+    0%{right: 30px; top: -1000px;}
+    25%{right: 30px; top: 15px;}
+    50%{right: 30px; top: 15px;}
+    100%{right: 30px; top: -1000px;}
+}
+
+@media (min-width:768px){
+    .containerLogin{
+        min-width: 400px;
+    }
+} 

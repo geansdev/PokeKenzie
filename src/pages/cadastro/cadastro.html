@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css " />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="./cadastro.css" />
+    <link rel="shortcut icon" href="../../assets/pokemon-pokeball-pointerPKFechada-32x32.png" type="image/x-icon">
+    <title>PokeKenzie | cadastro</title>
+  </head>
+  <header>
+    <nav class="navBar">
+      <button class="voltarLogin">Voltar login</button>
+    </nav>
+  </header>
+
+  <body>
+    <div class="formularioCadastro">
+      <form class="formCad" action="cadastrar">
+        <p class="text">Cadastro</p>
+        <input
+          id="name"
+          class="growInput"
+          type="text"
+          placeholder="digite seu nome "
+        />
+        <input
+          id="email"
+          class="growInput"
+          type="text"
+          placeholder="digite seu email"
+        />
+        <input
+          id="senha"
+          class="growInput"
+          type="password"
+          placeholder="digite sua senha"
+        />
+        <input
+          id="avatar_url"
+          class="growInput"
+          type="text"
+          placeholder=" coloque sua foto"
+        />
+        <p id="alerta"></p>
+        <button disabled id="cadastroBtn" class="btnCadastrar">
+          Cadastrar
+        </button>
+      </form>
+    </div>
+    <script type="module" src="./cadastro.js"></script>
+  </body>
+</html>

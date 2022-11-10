@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/pages/login/login.css">
+
+    <link rel="shortcut icon" href="src/assets/pokemon-pokeball-pointerPKFechada-32x32.png" type="image/x-icon">
+    <title>PokeKenzie | login</title>
+</head>
+<body>
+    <img src="./src/assets/fundoLogin.jpg" alt="">
+    <header>
+        <h2>PokeKenzie</h2>
+        <nav>
+            <button>Cadastrar</button>
+        </nav>
+    </header>
+    <main>
+        <div class="containerLogin">
+            <h1>LoginPoke</h1>
+            <form>
+                <label for="email" id="labelemail">Email</label>
+                <input id="email" type="email" disabled>
+                <label for="password" id="labelpassword">Password</label>
+                <input id="password" type="password" disabled>
+                <button type="submit" id="submit" value="Submit">Logar</button>
+            </form>
+            <p>ou</p>
+            <button id="irCadastro">Ir para o Cadastro</button>
+        </div>
+    </main>
+    <script src="./src/pages/login/login.js"></script>
+</body>
+</html>

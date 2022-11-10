@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600&display=swap");
+
+:root {
+  --charmander: #ff9441;
+  --squirtle: #5a9ca4;
+  --bulbasauro: #399494;
+  --white: #ffff;
+  --grey: #222;
+  --black: #000;
+  --red: red;
+}
+
+body {
+  font-family: "Oxanium", cursive;
+}
+
+button{
+    cursor: pointer;
+    }
