@@ -1,1 +1,3 @@
 # m2-projeto-em-equipe
+
+Cadastro e Login para um mine game pokemon das atigas pra quem gosta de GBA, dentro do site da home da pra capiturar pokemons e ter a sua colecao e ainda escolher seu parceiro de jornada...
